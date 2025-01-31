@@ -3,10 +3,10 @@ name: Deploy Next.js to GitHub Pages
 on:
   push:
     branches:
-      - main  # Change if your default branch is different
+      - main  # Adjust if your main branch has a different name
 
 permissions:
-  contents: write  # Required for pushing to GitHub Pages
+  contents: write  # Needed for GitHub Pages deployment
 
 jobs:
   deploy:
@@ -22,11 +22,8 @@ jobs:
       - name: Build Next.js app
         run: npm run build
 
-      - name: Export static files
-        run: npm run export
-
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: out # Next.js exports static files here
+          folder: out # This is where static files will be generated

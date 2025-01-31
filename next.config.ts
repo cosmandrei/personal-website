@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
-  output: "export", // Ensures it generates static files
-  trailingSlash: true, // GitHub Pages requires trailing slashes
+  output: 'export',
+  trailingSlash: true,
   images: {
-    unoptimized: true, // Avoids issues with Next.js image optimization
+    unoptimized: true,
   },
   basePath: '/personal-website',
 };
