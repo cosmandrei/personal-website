@@ -8,12 +8,12 @@ const withMDX = mdx({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  trailingSlash: true,
+  // trailingSlash: true,
   images: {
     unoptimized: true,
   },
   basePath: "",
-  assetPrefix: "/",
+  // assetPrefix: "/",
   pageExtensions: ["ts", "tsx", "md", "mdx"],
 };
 
