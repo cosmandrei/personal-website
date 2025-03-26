@@ -13,7 +13,7 @@ const nextConfig = {
     unoptimized: true,
   },
   basePath: "",
-  assetPrefix: "./",
+  assetPrefix: "/",
   pageExtensions: ["ts", "tsx", "md", "mdx"],
 };
 
